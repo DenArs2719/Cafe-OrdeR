@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="logo_description">Logo Cafe</string>
+    <string name="welcome">Welcome!</string>
+    <string name="hint_name">Enter name</string>
+    <string name="hint_password">Enter password</string>
+    <string name="create_order">Create order</string>
+</resources>
