@@ -5,4 +5,5 @@
     <string name="hint_name">Enter name</string>
     <string name="hint_password">Enter password</string>
     <string name="create_order">Create order</string>
+    <string name="show_toast">All attributes should be enter</string>
 </resources>

@@ -32,7 +32,8 @@ public class MainActivity extends AppCompatActivity
         String password = editPassword.getText().toString().trim();
         if(name.length() == 0 || password.length() == 0)
         {
-
+            ///create toast
+            Toast.makeText(this,R.string.show_toast,Toast.LENGTH_SHORT).show();
         }
         else
         {
