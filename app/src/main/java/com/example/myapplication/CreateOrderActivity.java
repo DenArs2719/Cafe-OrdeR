@@ -53,7 +53,7 @@ public class CreateOrderActivity extends AppCompatActivity
         textViewHello.setText(hello);
         textViewAdditions = findViewById(R.id.textViewAdditions);
         String additions = String.format(getString(R.string.additions),drink);
-        textViewAdditions.setText(drink);
+        textViewAdditions.setText(additions);
 
         checkBoxMilk = findViewById(R.id.checkBoxMilk);
         checkBoxSugar = findViewById(R.id.checkBoxSugar);
