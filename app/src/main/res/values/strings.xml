@@ -4,17 +4,22 @@
     <string name="welcome">Welcome!</string>
     <string name="hint_name">Enter name</string>
     <string name="hint_password">Enter password</string>
+    <string name="default_name">customer</string>
+    <string name="default_password">123456</string>
+    <string name="hello_user">Hello, %s. What do you want to order?</string>
     <string name="create_order">Create order</string>
     <string name="show_toast">All attributes should be enter</string>
-    <string name="hello_customer">Hello customer! What do you want to order</string>
     <string name="tea">Tea</string>
     <string name="coffee">Coffee</string>
-    <string name="additions">What add in you tea</string>
+    <string name="additions">What add iny our %s</string>
     <string name="milk">Milk</string>
     <string name="sugar">Sugar</string>
     <string name="lemon">Lemon</string>
     <string name="chose_drink">Chose type of drink</string>
     <string name="send_order">Button send order</string>
+    <string name="order">Name: %s\nPassword: %s\nDrink: %s\nKind of drink: %s</string>
+    <string name="need_additions">\"Needed additions: \"</string>
+
 
     <string-array name="options_of_coffee">
         <item>Americano</item>

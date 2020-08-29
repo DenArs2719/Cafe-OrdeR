@@ -11,7 +11,7 @@
         android:id="@+id/textViewHello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_customer"
+        android:text="@string/hello_user"
         android:layout_marginTop="36dp"
         android:layout_marginBottom="8dp"
         android:textSize="24sp"
@@ -33,17 +33,22 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <RadioButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+            android:id="@+id/radioButtonTea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:textColor="@color/colorWhite"
-        android:text="@string/tea"/>
+            android:checked="true"
+            android:text="@string/tea"
+            android:onClick="onClickChangeDrink"
+            android:textColor="@color/colorWhite" />
 
         <RadioButton
+            android:id="@+id/radioButtonCoffee"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:textColor="@color/colorWhite"
+            android:onClick="onClickChangeDrink"
             android:text="@string/coffee"/>
 
     </RadioGroup>
@@ -144,6 +149,7 @@
         android:textColor="@color/colorWhite"
         android:src="@drawable/button"
         android:contentDescription="@string/send_order"
+        android:onClick="onClickSendOrder"
         app:layout_constraintTop_toBottomOf="@id/spinnerCoffee"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
