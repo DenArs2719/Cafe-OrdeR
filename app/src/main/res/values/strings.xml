@@ -6,7 +6,16 @@
     <string name="hint_password">Enter password</string>
     <string name="create_order">Create order</string>
     <string name="show_toast">All attributes should be enter</string>
-    
+    <string name="hello_customer">Hello customer! What do you want to order</string>
+    <string name="tea">Tea</string>
+    <string name="coffee">Coffee</string>
+    <string name="additions">What add in you tea</string>
+    <string name="milk">Milk</string>
+    <string name="sugar">Sugar</string>
+    <string name="lemon">Lemon</string>
+    <string name="chose_drink">Chose type of drink</string>
+    <string name="send_order">Button send order</string>
+
     <string-array name="options_of_coffee">
         <item>Americano</item>
         <item>Espresso</item>

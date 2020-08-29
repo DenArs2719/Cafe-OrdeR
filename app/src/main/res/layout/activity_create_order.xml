@@ -4,13 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorLightBrown"
     tools:context=".CreateOrderActivity">
 
     <TextView
         android:id="@+id/textViewHello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello customer! What do you want to order"
+        android:text="@string/hello_customer"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorDarkBrown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -20,6 +27,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:layout_margin="8dp"
         app:layout_constraintTop_toBottomOf="@id/textViewHello"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -27,12 +35,16 @@
         <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tea"/>
+            android:layout_margin="8dp"
+            android:textColor="@color/colorWhite"
+        android:text="@string/tea"/>
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Coffee"/>
+            android:layout_margin="8dp"
+            android:textColor="@color/colorWhite"
+            android:text="@string/coffee"/>
 
     </RadioGroup>
 
@@ -40,7 +52,12 @@
         android:id="@+id/textViewAdditions"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="What add in you tea"
+        android:text="@string/additions"
+        android:layout_margin="8dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorDarkBrown"
         app:layout_constraintTop_toBottomOf="@id/radioGroup"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"  />
@@ -49,7 +66,9 @@
         android:id="@+id/checkBoxMilk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Milk"
+        android:layout_margin="8dp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/milk"
         app:layout_constraintTop_toBottomOf="@id/textViewAdditions"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toStartOf="@id/checkBoxSugar"
@@ -59,7 +78,9 @@
         android:id="@+id/checkBoxSugar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Sugar"
+        android:layout_margin="8dp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/sugar"
         app:layout_constraintTop_toBottomOf="@id/textViewAdditions"
         app:layout_constraintStart_toEndOf="@id/checkBoxMilk"
         app:layout_constraintEnd_toStartOf="@id/checkBoxLemon"
@@ -69,7 +90,9 @@
         android:id="@+id/checkBoxLemon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lemon"
+        android:layout_margin="8dp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/lemon"
         app:layout_constraintTop_toBottomOf="@id/textViewAdditions"
         app:layout_constraintStart_toEndOf="@id/checkBoxSugar"
         app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +102,12 @@
         android:id="@+id/textViewChooseDrink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Chose type of drink"
+        android:layout_margin="8dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorDarkBrown"
+        android:text="@string/chose_drink"
         app:layout_constraintTop_toBottomOf="@id/checkBoxSugar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"  />
@@ -88,6 +116,8 @@
         android:id="@+id/spinnerTea"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="@color/colorWhite"
         android:entries="@array/options_of_tea"
         android:visibility="visible"
         app:layout_constraintTop_toBottomOf="@id/textViewChooseDrink"
@@ -98,6 +128,8 @@
         android:id="@+id/spinnerCoffee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textColor="@color/colorWhite"
         android:entries="@array/options_of_coffee"
         android:visibility="invisible"
         app:layout_constraintTop_toBottomOf="@id/textViewAdditions"
@@ -108,8 +140,10 @@
         android:id="@+id/buttonSendOrder"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:textColor="@color/colorWhite"
         android:src="@drawable/button"
-        android:contentDescription="Button send order"
+        android:contentDescription="@string/send_order"
         app:layout_constraintTop_toBottomOf="@id/spinnerCoffee"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
