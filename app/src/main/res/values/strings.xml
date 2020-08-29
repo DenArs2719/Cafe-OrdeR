@@ -6,4 +6,16 @@
     <string name="hint_password">Enter password</string>
     <string name="create_order">Create order</string>
     <string name="show_toast">All attributes should be enter</string>
+    
+    <string-array name="options_of_coffee">
+        <item>Americano</item>
+        <item>Espresso</item>
+        <item>Latte</item>
+    </string-array>
+
+    <string-array name="options_of_tea">
+        <item>Black</item>
+        <item>Green</item>
+        <item>Red</item>
+    </string-array>
 </resources>
