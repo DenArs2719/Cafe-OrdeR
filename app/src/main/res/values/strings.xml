@@ -18,10 +18,7 @@
     <string name="chose_drink">Chose type of drink</string>
     <string name="send_order">Button send order</string>
     <string name="order">Name: %s\nPassword: %s\nDrink: %s\nKind of drink: %s</string>
-    <string name="need_additions">Needed additions:</string>
-    <string name="name">Name</string>
-    <string name="password">Password</string>
-    <string name="get_order">Order:</string>
+    <string name="need_additions">Needed additions: </string>
 
 
     <string-array name="options_of_coffee">

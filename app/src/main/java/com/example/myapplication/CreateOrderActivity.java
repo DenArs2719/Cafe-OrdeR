@@ -88,7 +88,7 @@ public class CreateOrderActivity extends AppCompatActivity
         }
 
         String additions = String.format(getString(R.string.additions),drink);
-        textViewAdditions.setText(drink);
+        textViewAdditions.setText(additions);
     }
 
     public void onClickSendOrder(View view)
@@ -99,15 +99,33 @@ public class CreateOrderActivity extends AppCompatActivity
 
         if(checkBoxMilk.isChecked())
         {
-            builderAdditions.append(getString(R.string.milk)).append(" ");
+            if(builderAdditions.length() != 0) {
+                builderAdditions.append(",").append(getString(R.string.milk)).append(" ");
+            }
+            else
+            {
+                builderAdditions.append(getString(R.string.milk)).append(" ");
+            }
         }
         if(checkBoxSugar.isChecked())
         {
-            builderAdditions.append(getString(R.string.sugar)).append(" ");
+            if(builderAdditions.length() != 0) {
+                builderAdditions.append(",").append(getString(R.string.sugar)).append(" ");
+            }
+            else
+            {
+                builderAdditions.append(getString(R.string.sugar)).append(" ");
+            }
         }
         if(checkBoxLemon.isChecked() && drink.equals(getString(R.string.tea)))
         {
-            builderAdditions.append(getString(R.string.lemon)).append(" ");
+            if(builderAdditions.length() != 0) {
+                builderAdditions.append(",").append(getString(R.string.lemon)).append(" ");
+            }
+            else
+            {
+                builderAdditions.append(getString(R.string.lemon)).append(" ");
+            }
         }
 
         String kindOfDrink = "";

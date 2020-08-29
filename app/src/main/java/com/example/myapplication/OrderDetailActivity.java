@@ -25,17 +25,26 @@ public class OrderDetailActivity extends AppCompatActivity
         if (intent.hasExtra("finalOrder"))
         {
 
-            String userOrder = intent.getStringExtra("finalOrder");
+            String order = intent.getStringExtra("finalOrder");
 
-            String[] str = userOrder.split("\\s");
+            String[] str = order.split("\\n");
 
             String userName = "";
             String userPassword = "";
+            String userOrder = "";
+
+            int position = 0;
 
             for(int i=0;i<str.length;i++)
             {
                 userName = str[i];
                 userPassword = str[i + 1];
+                position = i+2;
+                while(position < str.length)
+                {
+                    userOrder = userOrder + str[position]+"\n";
+                    position++;
+                }
                 break;
             }
 

@@ -8,19 +8,17 @@
     tools:context=".OrderDetailActivity" >
 
     <TextView
-        android:id="@+id/textViewPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:textSize="16sp"
-        android:text="@string/name" />
-
-    <TextView
         android:id="@+id/textViewName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="@string/password"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
         android:textSize="16sp" />
 
     <TextView
@@ -28,6 +26,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="8dp"
-        android:text="@string/get_order"
         android:textSize="16sp" />
 </LinearLayout>
