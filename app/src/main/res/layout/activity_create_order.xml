@@ -137,7 +137,7 @@
         android:textColor="@color/colorWhite"
         android:entries="@array/options_of_coffee"
         android:visibility="invisible"
-        app:layout_constraintTop_toBottomOf="@id/textViewAdditions"
+        app:layout_constraintTop_toBottomOf="@id/textViewChooseDrink"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
